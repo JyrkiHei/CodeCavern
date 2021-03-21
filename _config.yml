@@ -62,9 +62,11 @@ plugins:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
-
+# excerpt_separator: <!--more-->
 show_excerpts: true # set to true to show excerpts on the homepage
+
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -108,3 +110,9 @@ minima:
 # this and add the path to the pages in order as they should show up
 #header_pages:
 # - about.md
+
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
