@@ -1,7 +1,7 @@
 ---
 title: TIL - AzCli shows subscriptions that you are not logged into?
 layout: post
-permalink: /2021/03/26/til-azcli-account-cache.md
+permalink: /2021/03/26/til-azcli-account-cache
 date: 2021-03-26 12:00:00 +0200
 author: Jyrki Heinonen
 categories: TIL AzCli cache
