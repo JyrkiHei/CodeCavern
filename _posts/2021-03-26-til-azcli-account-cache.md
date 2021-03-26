@@ -9,7 +9,7 @@ tags: TIL AzCli
 ---
 Lately I've been wondering why AzCli sometimes shows subscriptions that I'm not logged into and was "worried" that I could accidentaly run commands to a wrong subscription... Like delete customers resourcegroups or something like that 🤕
 
-## Today I learned that
+### Today I learned that
 AzCli caches many things and you can clear it if you really want...
 
 ```
