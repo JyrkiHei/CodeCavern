@@ -1,5 +1,5 @@
 ---
-title: 'CDKTF get' and problems with Github actions
+title: CDKTF get and problems with Github actions
 layout: post
 permalink: /2022/03/25/CDKTF-problems-github-actions
 date: 2022-03-25 12:00:00 +0200
