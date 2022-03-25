@@ -24,6 +24,10 @@ This puzzled my mind for some time and I tried to find the flaw in my configurat
 After some binging, I found the correct parameters to set to enable logging.
 
 ``` Powershell
+##############
+# Powershell #
+##############
+
 # Session variables
 $env:CDKTF_LOG_LEVEL = "TRACE"
 $env:TF_LOG = "TRACE"
@@ -34,6 +38,10 @@ setx TF_LOG TRACE
 ```
 
 ``` Bash
+##############
+# Bash       #
+##############
+
 # Session variables
 export CDKTF_LOG_LEVEL="TRACE"
 export TF_LOG="TRACE"
