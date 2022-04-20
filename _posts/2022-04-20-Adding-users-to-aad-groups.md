@@ -32,7 +32,7 @@ az ad group member add --group $group --member-id $userId
 
 After a quick search fortunately someone had alreade blogged about this same problem. I had completely skipped the part from documentation that states 'The Azure CLI uses the --query argument to execute a JMESPath query on the results of commands ... Queries are executed on the JSON output before any display formatting'. The main part being 'queries are executed on the JSON output'... sigh...
 
-With the help of this blog post I was able to solve the problem. Query is running on the output of the commands (client-side), but the filter-parameter is doing an OData-filtering and running server-side. I just had to modify the 'az ad user list' command a bit.
+With the help of this [blog post](https://yourazurecoach.com/2021/02/10/resolving-the-azure-ad-object-id-with-azure-cli-takes-ages/) I was able to solve the problem. Query is running on the output of the commands (client-side), but the filter-parameter is doing an OData-filtering and running server-side. I just had to modify the 'az ad user list' command a bit.
 
 ``` bash
 $userId = $(az ad user list --filter "(userPrincipalName eq '$userEmail')" --query "[].objectId" --output tsv)
